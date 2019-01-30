@@ -11,6 +11,7 @@
         android:id="@+id/imageButton"
         android:layout_width="0dp"
 
+        android:background="@null"
 
         android:layout_height="46dp"
         android:layout_marginEnd="8dp"
@@ -26,6 +27,8 @@
 
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+
+        android:background="@null"
 
         android:layout_marginTop="8dp"
 
@@ -55,7 +58,6 @@
         android:layout_height="wrap_content"
 
         android:text="Phone, email or username"
-
         app:layout_constraintBottom_toTopOf="@+id/etUsername"
         app:layout_constraintStart_toStartOf="@+id/etUsername"
         app:layout_constraintTop_toBottomOf="@+id/tvBanner"
@@ -67,11 +69,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
 
-        app:layout_constraintBottom_toBottomOf="@+id/etPassword"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.182" />
 
     <TextView
         android:id="@+id/tvPassword"
@@ -79,7 +82,6 @@
         android:layout_height="wrap_content"
 
         android:text="Password"
-
         app:layout_constraintBottom_toTopOf="@+id/etPassword"
         app:layout_constraintStart_toStartOf="@+id/etPassword"
         app:layout_constraintTop_toBottomOf="@+id/etUsername"
@@ -94,23 +96,24 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.68"
+
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent"
-
-        />
+        app:layout_constraintVertical_bias="0.263" />
 
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toTopOf="@+id/bLogin"
+
         app:layout_constraintTop_toBottomOf="@+id/etPassword"
 
-        app:layout_constraintVertical_bias="1.0"
-
-        />
+        app:layout_constraintVertical_bias="0.95" />
 
     <Button
 
@@ -121,6 +124,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:text="Login"
+
+        android:background="@color/colorPrimary"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
